@@ -1,0 +1,12 @@
+{
+  "private": true,
+  "scripts": {
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "devDependencies": {
+    "vitest": "^3.2.0",
+    "typescript": "^5.8.0",
+    "@types/node": "^22.0.0"
+  }
+}
