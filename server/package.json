@@ -1,0 +1,29 @@
+{
+  "name": "console-catcher",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "MCP server that captures browser console errors for AI coding assistants",
+  "main": "dist/index.js",
+  "bin": {
+    "console-catcher": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsup src/index.ts --format esm --dts --banner.js '#!/usr/bin/env node'",
+    "dev": "tsc --watch",
+    "start": "node dist/index.js",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "keywords": ["mcp", "console", "errors", "debugging", "claude-code"],
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "zod": "^3.25.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.8.0",
+    "tsup": "^8.0.0",
+    "vitest": "^3.2.0",
+    "@types/node": "^22.0.0"
+  }
+}
