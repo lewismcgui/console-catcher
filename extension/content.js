@@ -10,5 +10,7 @@ window.addEventListener('message', function (event) {
   chrome.runtime.sendMessage({
     type: 'console-catcher-error',
     payload: event.data.payload,
+  }).catch(() => {
+    // Service worker may be inactive — that's ok, it'll wake on next message
   });
 });
