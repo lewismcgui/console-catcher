@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e1e2e"/>
+      <stop offset="100%" style="stop-color:#11111b"/>
+    </linearGradient>
+    <linearGradient id="glow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f38ba8"/>
+      <stop offset="100%" style="stop-color:#eba0ac"/>
+    </linearGradient>
+  </defs>
+  <!-- Rounded square background -->
+  <rect width="128" height="128" rx="28" fill="url(#bg)"/>
+  <!-- Subtle border -->
+  <rect width="124" height="124" x="2" y="2" rx="26" fill="none" stroke="#313244" stroke-width="1.5"/>
+  <!-- Terminal bracket > -->
+  <path d="M 28 38 L 52 62 L 28 86" fill="none" stroke="#a6adc8" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Underscore cursor -->
+  <line x1="58" y1="86" x2="82" y2="86" stroke="#a6adc8" stroke-width="8" stroke-linecap="round"/>
+  <!-- Error dot (red) -->
+  <circle cx="100" cy="32" r="16" fill="url(#glow)"/>
+  <!-- Exclamation mark in dot -->
+  <line x1="100" y1="23" x2="100" y2="34" stroke="#1e1e2e" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="100" cy="40" r="2.5" fill="#1e1e2e"/>
+</svg>
